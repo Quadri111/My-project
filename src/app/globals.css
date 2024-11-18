@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 1rem;
+  margin: 0;
+  height: 100vh;
+  animation: backgroundAnimation 15s ease infinite;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #ff7e5f;
+    }
+    25% {
+        background-color: #feb47b; 
+    }
+    50% {
+        background-color: #86e3ce;
+    }
+    75% {
+        background-color: #5b86e5;
+    }
+    100% {
+        background-color: #ff7e5f; 
+    }
+}
+
